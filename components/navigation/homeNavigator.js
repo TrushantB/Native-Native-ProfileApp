@@ -2,12 +2,14 @@ import React,{Component} from 'react';
 import {createStackNavigator,createAppContainer,DrawerActions} from 'react-navigation';
 import HomePage from '../home';
 import Events from '../Events/events';
+import Note from '../Events/note';
 import Expense from '../Expense/expence';
 
 const MyStackNavigator = createStackNavigator ({
     Home:{screen: HomePage},
     Events:{screen:Events},
-    Expense:{screen:Expense}
+    Expense:{screen:Expense},
+    Note:{screen:Note}
 },
 {
     initialRouteName:'Home',
